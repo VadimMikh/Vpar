@@ -18,7 +18,6 @@ export class ItemsListComponent implements OnInit {
     this.itemsService.getItems().subscribe(
         result => {
           this.items = result;
-          console.log(this.items );
         },
         error => console.warn(error)
     );
