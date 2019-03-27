@@ -14,6 +14,7 @@ export class ItemsListComponent implements OnInit {
   ngOnInit() {
     this.getItems();
   }
+  
   getItems() {
     this.itemsService.getItems().subscribe(
         result => {
@@ -22,5 +23,4 @@ export class ItemsListComponent implements OnInit {
         error => console.warn(error)
     );
   }
-
 }
