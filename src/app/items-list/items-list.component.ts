@@ -6,6 +6,7 @@ import { ItemsService } from '../items-service.service';
   templateUrl: './items-list.component.html',
   styleUrls: ['./items-list.component.css']
 })
+
 export class ItemsListComponent implements OnInit {
   items;
 
